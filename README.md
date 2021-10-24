@@ -44,12 +44,20 @@ Using your knowledge of Pandas, you’ll preprocess the dataset in order to perf
 * The get_dummies() method is used to create variables for the text features, which are then stored in a new DataFrame, X 
 * The features from the X DataFrame have been standardized using the StandardScaler fit_transform() function
 
+<img width="513" alt="CoinName" src="https://user-images.githubusercontent.com/85860367/138583226-2bd51a84-8f7c-4cfe-8ed0-cfe55ae63642.PNG">
+
+<img width="470" alt="Deliverable 1 screenshot" src="https://user-images.githubusercontent.com/85860367/138583058-5ff696d7-7d46-4e5a-a29a-7a68c966483b.PNG">
+
+
 ##### Deliverable 2: Reducing Data Dimensions Using PCA
 
 Using your knowledge of how to apply the Principal Component Analysis (PCA) algorithm, you’ll reduce the dimensions of the X DataFrame to three principal components and place these dimensions in a new DataFrame.
 
 * The PCA algorithm reduces the dimensions of the X DataFrame down to three principal components (10 pt)
 * The pcs_df DataFrame is created and has the following three columns, PC 1, PC 2, and PC 3, and has the index from the crypto_df DataFrame
+
+<img width="635" alt="Deliverable 2 screenshot" src="https://user-images.githubusercontent.com/85860367/138583070-ce0aa817-fa19-48c6-b94a-0ac06226939c.PNG">
+
 
 ##### Deliverable 3: Clustering Cryptocurrencies Using K-means
 
@@ -60,6 +68,9 @@ Using your knowledge of the K-means algorithm, you’ll create an elbow curve us
 * Predictions are made on the K clusters of the cryptocurrencies’ data 
 * A new DataFrame is created with the same index as the crypto_df DataFrame and has the following columns: Algorithm, ProofType, TotalCoinsMined, TotalCoinSupply, PC 1, PC 2, PC 3, CoinName, and Class 
 
+<img width="557" alt="Elbow Curve Screenshot" src="https://user-images.githubusercontent.com/85860367/138583249-3fae793d-3cbd-4ee0-a672-2b7dba3bcf58.PNG">
+
+
 ##### Deliverable 4: Visualizing Cryptocurrencies Results
 
 Using your knowledge of creating scatter plots with Plotly Express and hvplot, you’ll visualize the distinct groups that correspond to the three principal components you created in Deliverable 2, then you’ll create a table with all the currently tradable cryptocurrencies using the hvplot.table() function.
@@ -69,3 +80,15 @@ Using your knowledge of creating scatter plots with Plotly Express and hvplot, y
 * The total number of tradable cryptocurrencies is printed 
 * A DataFrame is created that contains the clustered_df DataFrame index, the scaled data, and the CoinName and Class columns 
 * A hvplot scatter plot is created where the X-axis is "TotalCoinsMined", the Y-axis is "TotalCoinSupply", the data is ordered by "Class", and it shows the CoinName when you hover over the data point 
+
+<img width="528" alt="3D Plot screenshot" src="https://user-images.githubusercontent.com/85860367/138583261-d085fff8-d7a6-48e8-9a45-124a390816b8.PNG">
+
+<img width="684" alt="Tradable Table screeshot" src="https://user-images.githubusercontent.com/85860367/138583274-cd80d96a-5187-4881-b8d8-0be09533d516.PNG">
+
+<img width="468" alt="New Plot DataFrame Screenshot" src="https://user-images.githubusercontent.com/85860367/138583282-63e5c659-8a5b-4e54-ae5b-d8bd356aa74d.PNG">
+
+<img width="575" alt="ScatterPlot screenshot" src="https://user-images.githubusercontent.com/85860367/138583292-90d6f2ac-d3c9-4da6-b214-471ca11a1f06.PNG">
+
+
+
+
